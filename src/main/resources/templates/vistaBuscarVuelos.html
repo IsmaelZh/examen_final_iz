@@ -11,7 +11,7 @@
 </head>
 
 <body>
-	<form th:action="@{/aerolinea/buscarVuelo}" th:object="${vuelo}" th:method="PUT">
+	<form th:action="@{/aerolinea/buscarVuelo/{id}(id = ${vuelo.id})}" th:object="${vuelo}" th:method="PUT">
 		<table>
 			<tr>
 				<td><label>Numero de vuelo:</label></td>
